@@ -43,6 +43,7 @@ article.tweets header div img {
 article.tweets header div h2 {
   color: #575656;
   font-size: 40px;
+  margin-left: 0.25em;
 }
 
 article.tweets div.tweet {
