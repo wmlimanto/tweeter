@@ -5,7 +5,7 @@
  */
 
 $(document).ready(() => {
-
+  
   // create new tweet html using tweetData obj
   const createTweetElement = function (tweetData) {
     let $tweet = $(`
@@ -22,7 +22,7 @@ $(document).ready(() => {
           </div>
           <footer>
             <div>
-              <p>${tweetData.created_at}</p>
+              <p>${timeago.format(tweetData.created_at)}</p>
             </div>
             <div>
               <i class="fa-solid fa-flag"></i>
