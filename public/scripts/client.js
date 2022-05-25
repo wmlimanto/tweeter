@@ -71,5 +71,19 @@ $(document).ready(() => {
   };
 
   renderTweets(data);
+
+  $("form").on("submit", function(event) {
+    // prevent page refresh
+    event.preventDefault();
+    // turn form data into a query string
+    const data = $(this).serialize();
+    console.log("Form Submission Data: ", data)
+    $.ajax({
+      method: "POST",
+      url: "/tweets",
+      data: data
+    })
+  })
+  
 })
 
