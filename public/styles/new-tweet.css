@@ -34,3 +34,11 @@
   color: #4056A1;
   outline: none;
 }
+
+.new-tweet #invalid {
+  font-style: italic;
+  color: red;
+  border: 2px solid red;
+  display: none;
+  padding: 3px;
+}

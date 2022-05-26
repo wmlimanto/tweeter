@@ -57,10 +57,13 @@ $(document).ready(() => {
     event.preventDefault();
     
     if (!$('#tweet-text').val().trim()) {
-      alert("tweet cannot be empty!");
+      $('#invalid').text("tweet cannot be empty!");
+      $('#invalid').slideDown("slow");
     } else if ($('#tweet-text').val().length > 140) {
-      alert("tweet is too long!");
+      $('#invalid').text("tweet is too long!");
+      $('#invalid').slideDown("slow");
     } else {
+      $('#invalid').slideUp();
       // turn form data into a query string
       const data = $(this).serialize();
 
