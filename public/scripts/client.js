@@ -40,7 +40,7 @@ $(document).ready(() => {
 
     for (let tweet of tweets) {
       const $tweet = createTweetElement(tweet);
-      $(".feed").append($tweet);
+      $(".feed").prepend($tweet);
     }
   };
 
@@ -63,6 +63,7 @@ $(document).ready(() => {
         data: data
       })
       .then(function() {
+        // resets form then loads new tweet
         $("form").trigger("reset");
       })
       .then(function() {
