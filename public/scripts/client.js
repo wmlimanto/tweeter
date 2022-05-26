@@ -44,20 +44,32 @@ $(document).ready(() => {
     }
   };
 
-  renderTweets(data);
-
   // event listener on 'submit' that uses AJAX to POST (send) form data to server (/tweets)
   $("form").on("submit", function(event) {
     // prevent page refresh
     event.preventDefault();
-    // turn form data into a query string
-    const data = $(this).serialize();
-    console.log("Form Submission Data: ", data)
-    $.ajax({
-      method: "POST",
-      url: "/tweets",
-      data: data
-    })
+    
+    if (!$('#tweet-text').val().trim()) {
+      alert("tweet cannot be empty!");
+    } else if ($('#tweet-text').val().length > 140) {
+      alert("tweet is too long!");
+    } else {
+      // turn form data into a query string
+      const data = $(this).serialize();
+
+      $.ajax({
+        method: "POST",
+        url: "/tweets",
+        data: data
+      })
+      .then(function() {
+        $("form").trigger("reset");
+      })
+      .then(function() {
+        loadTweets();
+      })
+    }
+
   })
 
   // use AJAX to GET (fetch) json data from server (/tweets)
