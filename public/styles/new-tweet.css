@@ -24,15 +24,17 @@
   font-family: "Bungee", sans-serif;
   color: whitesmoke;
   padding: 5px;
-  border: 2px solid royalblue;
+  /* border: 2px solid royalblue; */
   border-radius: 4px;
   outline: none;
 }
 
 .new-tweet div button:hover {
-  background-color: #ffa200;
+  background-color: #4056A1;
+  border-color: #ffa200;
+  /* background-color: #ffa200;
   color: #4056A1;
-  outline: none;
+  outline: none; */
 }
 
 .new-tweet #invalid {

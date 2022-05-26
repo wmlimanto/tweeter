@@ -68,6 +68,14 @@ article.tweets footer {
   margin: 10px 90px;
 }
 
- .fa-flag:hover, .fa-retweet:hover, .fa-heart:hover {
-  color: #f4a60a;
+ .fa-flag:hover {
+  color: #0a8bf4;
+}
+
+.fa-retweet:hover {
+  color: rgb(0, 230, 65);
+}
+
+.fa-heart:hover {
+  color: red;
 }

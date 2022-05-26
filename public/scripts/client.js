@@ -80,7 +80,6 @@ $(document).ready(() => {
         loadTweets();
       })
     }
-
   })
 
   // use AJAX to GET (fetch) json data from server (/tweets)
@@ -95,5 +94,16 @@ $(document).ready(() => {
     })
   };
   loadTweets();
+
+  // animation that toggles form to slide up and down when button is clicked
+  $(".toggle-form").click(function() {
+    if ($("section.new-tweet").is(":hidden")) {
+      $("section.new-tweet").slideDown();
+    $("textarea").focus();
+    } else {
+      $("section.new-tweet").slideUp();
+    }
+  });
+
 })
 
