@@ -18,7 +18,7 @@ $(document).ready(() => {
             <p>${tweetData.user.handle}</p>
           </header>
           <div class="tweet">
-            <p>${tweetData.content.text}</p>
+            <p>${escape(tweetData.content.text)}</p>
           </div>
           <footer>
             <div>
@@ -33,7 +33,14 @@ $(document).ready(() => {
         </article>
     `);
     return $tweet;
-  }
+  };
+
+  // prevents XSS using an escape function
+  const escape = function (string) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(string));
+    return div.innerHTML;
+  };
 
   // loop over tweets, pass each tweet through createTweetElement and appends it to the tweets container
   const renderTweets = function (tweets) {
