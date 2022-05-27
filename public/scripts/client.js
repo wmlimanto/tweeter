@@ -97,11 +97,11 @@ $(document).ready(() => {
 
   // animation that toggles form to slide up and down when button is clicked
   $(".toggle-form").click(function() {
-    if ($("section.new-tweet").is(":hidden")) {
-      $("section.new-tweet").slideDown();
+    if ($(".new-tweet").is(":hidden")) {
+      $(".new-tweet").slideDown();
     $("textarea").focus();
     } else {
-      $("section.new-tweet").slideUp();
+      $(".new-tweet").slideUp();
     }
   });
 

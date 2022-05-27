@@ -2,11 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 20px;
+  display: none
+}
+
+.new-tweet form {
+  width: 100%;
 }
 
 .new-tweet textarea {
   background-color: transparent;
-  width: 80vw;
+  width: 100%;
   outline: none;
   border: none;
   border-bottom: 3px solid;
@@ -43,4 +49,18 @@
   border: 2px solid red;
   display: none;
   padding: 3px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 60%;
+    position: relative;
+    top: 110px;
+    margin: 3em 1.5em 0em 1.5em;
+  }
+
+  .new-tweet form {
+    width: 100%;
+    margin-bottom: 1em;
+  }
 }

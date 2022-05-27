@@ -15,3 +15,13 @@ header div.profile-pic {
   margin-top: 50px;
   margin-bottom: -60px;
 }
+
+@media only screen and (min-width: 1024px) {
+  .header {
+    width: 40%;
+    margin: 3em 3em 0em 1.5em;
+    position: relative;
+    top: 110px;
+  }
+  
+}
