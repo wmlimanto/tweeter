@@ -8,7 +8,7 @@
     "content": {
       "text": "If I have seen further it is by standing on the shoulders of giants"
     },
-    "created_at": 1653006225729
+    "created_at": 1653429216787
   },
   {
     "user": {
@@ -19,6 +19,17 @@
     "content": {
       "text": "Je pense , donc je suis"
     },
-    "created_at": 1653092625729
+    "created_at": 1653515616787
+  },
+  {
+    "user": {
+      "name": "Joe Rogan",
+      "avatars": "https://i.imgur.com/5fUVPRP.png",
+      "handle": "@JoeRogan"
+    },
+    "content": {
+      "text": "One of the most fascinating lessons I've abosrbed about life is that the struggle is good"
+    },
+    "created_at": 1653602016787
   }
 ]
