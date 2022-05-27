@@ -29,18 +29,41 @@
   background-color: #4056A1;
   font-family: "Bungee", sans-serif;
   color: whitesmoke;
-  padding: 5px;
-  /* border: 2px solid royalblue; */
-  border-radius: 4px;
+  padding: 16px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   outline: none;
+  border-radius: 6px;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+.new-tweet div button {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.new-tweet div button::after {
+  content: '»';
+  align-items: center;
+  position: absolute;
+  opacity: 0;  
+  right: -15px;
+  transition: 0.5s;
 }
 
 .new-tweet div button:hover {
-  background-color: #4056A1;
-  border-color: #ffa200;
-  /* background-color: #ffa200;
-  color: #4056A1;
-  outline: none; */
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+.new-tweet div button:hover::after {
+  opacity: 1;
+  right: 2px;
 }
 
 .new-tweet #invalid {
@@ -50,6 +73,7 @@
   display: none;
   padding: 3px;
   margin-top: 0;
+  border-radius: 5px;
 }
 
 @media only screen and (min-width: 1024px) {

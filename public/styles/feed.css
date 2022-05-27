@@ -31,31 +31,32 @@ article.tweets header div {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  margin-left: 3px;
 }
 
 article.tweets header div img {
   display: flex;
-  height: 90px;
-  width: 90px;
-  margin: 0px 5px;
+  height: 75px;
+  width: 75px;
+  margin: 0px 7px;
 }
 
 article.tweets header div h2 {
   color: #575656;
-  font-size: 30px;
-  margin-left: 0.25em;
+  font-size: 28px;
+  margin-left: 2px;
 }
 
 article.tweets div.tweet {
   display: flex;
-  font-size: 25px;
+  font-size: 23px;
   border-bottom: 3px solid #545149;
   margin: 15px 90px;
   text-align: left;
 }
 
 article.tweets header p {
-  font-size: 30px;
+  font-size: 25px;
   margin: 10px 20px;
   opacity: 0.80;
 }
@@ -69,7 +70,7 @@ article.tweets footer {
 }
 
 article.tweets footer p {
-  font-size: 20px;
+  font-size: 19px;
 }
 
  .fa-flag:hover {
