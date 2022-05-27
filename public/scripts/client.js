@@ -42,7 +42,7 @@ $(document).ready(() => {
     return div.innerHTML;
   };
 
-  // loop over tweets, pass each tweet through createTweetElement and appends it to the tweets container
+  // loop over tweets, pass each tweet through createTweetElement and prepends it to the tweets container
   const renderTweets = function (tweets) {
 
     for (let tweet of tweets) {
@@ -55,7 +55,7 @@ $(document).ready(() => {
   $("form").on("submit", function(event) {
     // prevent page refresh
     event.preventDefault();
-    
+    // error msg that slides up and down
     if (!$('#tweet-text').val().trim()) {
       $('#invalid').text("tweet cannot be empty!");
       $('#invalid').slideDown("slow");
