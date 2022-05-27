@@ -32,6 +32,19 @@ nav div p {
 
 nav div i {
   color: orangered;
+  position: relative;
+  animation-name: bounce;
+  animation-duration: 2s; 
+  animation-iteration-count: infinite;
+}
+
+/* keyframe animation for button on nav to bounce */
+@keyframes bounce {
+  0% {color:red; left: 0px; top: 0px;}
+  25% {color:orange; left: 0px; top: 5px;}
+  50% {color: red; left: 0px; top: 10px;}
+  75% {color:orange; left: 0px; top: 5px;}
+  100% {color:orangered; left: 0px; top: 0px;}
 }
 
 @media only screen and (min-width: 1024px) {
