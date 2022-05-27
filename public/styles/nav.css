@@ -36,6 +36,7 @@ nav div i {
   animation-name: bounce;
   animation-duration: 2s; 
   animation-iteration-count: infinite;
+  cursor: pointer;
 }
 
 /* keyframe animation for button on nav to bounce */
