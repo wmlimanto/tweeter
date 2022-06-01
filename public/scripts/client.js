@@ -44,6 +44,8 @@ $(document).ready(() => {
 
   // loop over tweets, pass each tweet through createTweetElement and prepends it to the tweets container
   const renderTweets = function (tweets) {
+    // clear feed to prevent duplicate tweets from previous instances
+    $(".feed").empty();
 
     for (let tweet of tweets) {
       const $tweet = createTweetElement(tweet);
